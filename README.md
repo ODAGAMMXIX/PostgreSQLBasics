@@ -1,0 +1,2 @@
+# PostgreSQLBasics
+PostgreSQL Exercises
