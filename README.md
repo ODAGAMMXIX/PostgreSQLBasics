@@ -2,10 +2,10 @@
 PostgreSQL Exercises
 ![image](https://github.com/user-attachments/assets/f13e8b94-ff2a-4c2a-b5e2-b3d7e534e408)
 
-No modelo relacional ilustrado na figura acima, a tabela viagem deverá armazenar informações sobre as viagens realizadas a serviço,
-incluindo o carro utilizado, o motorista responsável e a pessoa a ser transportada. Devem ser ainda registrados detalhes como o destino,
-data e hora do início e do fim da viagem, preservando a consistência temporal dos valores referentes ao início e ao fim da viagem.
+No modelo relacional ilustrado na figura acima, a tabela viagem deverá armazenar informações sobre as viagens realizadas a serviço, incluindo o carro utilizado, o motorista responsável e a pessoa a ser transportada. Devem ser ainda registrados detalhes como o destino, data e hora do início e do fim da viagem, preservando a consistência temporal dos valores referentes ao início e ao fim da viagem.
+
 Diante do exposto, pede-se:
+
 a) especifique atributos, tipos e restrições da tabela viagem;
 
 #### a) Especificação de atributos, tipos e restrições da tabela viagem
@@ -70,7 +70,7 @@ CREATE TABLE viagem (
     Destino VARCHAR(255) NOT NULL,
     Data_Inicio DATETIME NOT NULL,
     Data_Fim DATETIME NOT NULL,
-    CHECK (Data_Fim > Data_Inicio),
+    CHECK (Data_Fim > Data_Inicio), -- preservando a consistência temporal dos valores referentes ao início e ao fim da viagem.
     FOREIGN KEY (Carro_ID) REFERENCES carro(Carro_ID),
     FOREIGN KEY (Motorista_ID) REFERENCES motorista(Motorista_ID),
     FOREIGN KEY (Passageiro_ID) REFERENCES passageiro(Passageiro_ID)
@@ -121,7 +121,7 @@ CREATE TABLE viagem (
     Destino VARCHAR(255) NOT NULL,
     Data_Inicio TIMESTAMP NOT NULL,
     Data_Fim TIMESTAMP NOT NULL,
-    CHECK (Data_Fim > Data_Inicio),
+    CHECK (Data_Fim > Data_Inicio), --  preservando a consistência temporal dos valores referentes ao início e ao fim da viagem.
     FOREIGN KEY (Carro_ID) REFERENCES carro(Carro_ID),
     FOREIGN KEY (Motorista_ID) REFERENCES motorista(Motorista_ID),
     FOREIGN KEY (Passageiro_ID) REFERENCES passageiro(Passageiro_ID)
