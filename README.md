@@ -135,4 +135,10 @@ INSERT INTO passageiro (Nome, RG) VALUES ('Maria Souza', 'MG1234567');
 -- Inserção de um valor inicial na tabela viagem
 INSERT INTO viagem (Carro_ID, Motorista_ID, Passageiro_ID, Destino, Data_Inicio, Data_Fim)
 VALUES (1, 1, 1, 'Centro de São Paulo', '2025-03-13 09:00:00', '2025-03-13 11:00:00');
+
+-- Verificar Inserção
+
+SELECT * FROM viagem;
+
 ```
+![image](https://github.com/user-attachments/assets/96a24e3e-471f-48f3-b762-a55742f5d4b7)
