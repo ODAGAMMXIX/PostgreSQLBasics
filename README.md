@@ -86,7 +86,7 @@ INSERT INTO viagem (Carro_ID, Motorista_ID, Passageiro_ID, Destino, Data_Inicio,
 VALUES (1, 1, 1, 'Centro de São Paulo', '2025-03-13 09:00:00', '2025-03-13 11:00:00');
 ```
 ### POSTGRESQL
-```PostgreSQL
+```sql
 -- Criação do banco de dados
 CREATE DATABASE viagens_db;
 \c viagens_db
