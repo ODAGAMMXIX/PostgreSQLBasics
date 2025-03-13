@@ -35,6 +35,7 @@ VALUES (1, 2, 3, 'Centro de São Paulo', '2025-03-13 09:00:00', '2025-03-13 11:0
 ```
 
 ### SQL (regular)
+```sql
 -- Criação do banco de dados
 CREATE DATABASE IF NOT EXISTS viagens_db;
 USE viagens_db;
@@ -83,9 +84,9 @@ INSERT INTO passageiro (Nome, RG) VALUES ('Maria Souza', 'MG1234567');
 -- Inserção de um valor inicial na tabela viagem
 INSERT INTO viagem (Carro_ID, Motorista_ID, Passageiro_ID, Destino, Data_Inicio, Data_Fim)
 VALUES (1, 1, 1, 'Centro de São Paulo', '2025-03-13 09:00:00', '2025-03-13 11:00:00');
-
+```
 ### POSTGRESQL
-
+```PostgreSQL
 -- Criação do banco de dados
 CREATE DATABASE viagens_db;
 \c viagens_db
@@ -134,3 +135,4 @@ INSERT INTO passageiro (Nome, RG) VALUES ('Maria Souza', 'MG1234567');
 -- Inserção de um valor inicial na tabela viagem
 INSERT INTO viagem (Carro_ID, Motorista_ID, Passageiro_ID, Destino, Data_Inicio, Data_Fim)
 VALUES (1, 1, 1, 'Centro de São Paulo', '2025-03-13 09:00:00', '2025-03-13 11:00:00');
+```
